@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Institución Educativa Liceo Pedregal</title>
+<link rel="stylesheet" href="css/estilos.css"/>
+<script src="js/validaciones.js"></script>
+</head>
+
+<body>
+	<section id="principal">	
+		<header>
+			<div id="logo">
+				<img src="imagenes/Imagen1.png"/>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">|Inicio </a></li>
+                    <li><a href="quienessomos.html">|¿Quienes somos y que hacemos? </a></li>
+                    <li><a href="contacto.html">|Contacto </a></li>
+				</ul>
+			</nav>
+		</header>
+		 <form name="inicarsesion" id="inicarsesion_frm" method="get">
+               <fieldset>
+               	<legend>Iniciar sesion</legend>
+					<label for="usuario">Nombre de usuario</label>
+					<input type="text" id="usuario" name="usuario_txt"/>
+					<br>
+					<br>
+					<label for="contraseña">Contraseña</label>
+					<input type="password" id="contraseña" name="contraseña_txt"/>
+					<br>
+					<br>
+					<label for="cbperfil">Perfil</label>
+					<select id="perfil" name="perfil">
+						<option>--</option>
+						<option>|Estudiante</option>
+						<option>|Secretaria</option>
+						<option>|Rectora</option>
+                        <option>|Trabajadores</option>
+					</select>
+					<br>
+					<br>
+					<input type="button" id="enviar" name="iniciar_btn" value="Iniciar sesión" onClick="validarform()" />
+					<input type="button" id="limpiar" name="iniciar_btn" value="Limpiar" onClick="limpiarform()" />
+			   </fieldset>	
+			</form>
+	</section>
+  <footer>
+  	By: Jocsiry Isaza.Juliana Atehortua.Salome Henao
+  </footer>	
+</body>
+</html>
